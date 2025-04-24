@@ -1,0 +1,19 @@
+<div [ngClass]="{ 'activo': usuario.activo, 'inactivo': !usuario.activo}">
+    {{ usuario.nombre }}
+</div>
+
+
+<div class="card-container">
+<div *ngFor="let producto of productos; let i = index" class="card">
+    <div>
+    
+        <img src="{{ producto.img }}" class="card img">
+        <div class="card-body">
+            <h5 class="card-title">{{ i + 1 }}. {{ producto.nombre }}</h5>
+            <p class="card-text">Precio: {{ producto.precio }}</p>
+            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+        </div>
+   
+</div>
+</div>
+</div>

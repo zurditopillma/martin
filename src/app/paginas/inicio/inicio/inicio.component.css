@@ -1,0 +1,56 @@
+/*estilos generales*/
+body{background-color: #222;
+    color: white;
+    font-family: Arial, sans-serif;
+    }
+     /*contenedor de las tarjetas*/
+    .card-container{
+        display: flex;
+        justify-content: center; /*centra las tarjetas*/
+        gap: 20px; /*espacio entre las tarjetas*/
+        flex-wrap: wrap; /*permite que se acomoden en pantallas chicas*/
+        padding: 20px;
+    }
+    
+    /*estilos para la tarjeta*/
+    .card{
+        width: 18rem;
+        background-color: #68395a;
+        color: white;
+        border-radius: 18px;
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out box-shadow 0.3s ease-in-out;
+        box-shadow: 0 4px 8px rgb(255, 255, 255);
+    }
+    
+    /*efecto hover en la tarjeta*/
+    .card:hover{
+        transform: scale(1.05);
+        box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.2);
+    }
+    
+    /*Esto es para la imagen dentro de la tarjeta*/
+    .card img{
+        width: 100px;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    /*Boton estilizado*/
+    .card .btn{
+        background-color: yellow;
+        color: black;
+        border: none;
+        transition:  background 0.3s ease-in-out;
+    }
+    
+    .card .btn:hover{
+        background-color: yellow;
+    }
+    /*Reposividad para pantallas chicas*/
+    @media(max-width:600px){
+        .card-container{
+            flex-direction: column;/*cambia a columna*/
+            align-items: center; /*centra en pantallas chicas */
+        }
+    }
