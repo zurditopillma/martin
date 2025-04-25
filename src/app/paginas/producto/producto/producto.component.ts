@@ -1,5 +1,7 @@
 import { NgClass, NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
+import { Producto } from '../../../modelos/producto.model';
+import { CarritoService } from '../../../servicios/carrito.service';
 
 @Component({
   selector: 'app-producto',
@@ -8,6 +10,16 @@ import { Component } from '@angular/core';
   styleUrl: './producto.component.css'
 })
 export class ProductoComponent {
+  Productos:Producto[] = []
+  constructor(private carritoService: CarritoService){}
+
+  //METODO PARA AGREGAR UN PRODUCTO AL CARRITO
+  agregar(producto: Producto){
+    this.carritoService.agregarAlCarrito(producto)
+    alert('Producto agregado al carrito')//muestra el mensaje
+  }
+    
+  
   productos = [
     { 
       id:1,
