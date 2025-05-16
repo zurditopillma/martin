@@ -1,0 +1,201 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.centered-text {
+    font-size: 50px; /* Cambia el tamaño de la palabra */
+    color: #333; /* Color opcional */
+}
+
+/*estilos generales*/
+body{background-color: #222;
+    color: white;
+    font-family: Arial, sans-serif;
+    }
+     /*contenedor de las tarjetas*/
+    .card-container{
+        display: flex;
+        justify-content: center; /*centra las tarjetas*/
+        gap: 20px; /*espacio entre las tarjetas*/
+        flex-wrap: wrap; /*permite que se acomoden en pantallas chicas*/
+        padding: 20px;
+    }
+    
+    /*estilos para la tarjeta*/
+    .card{
+        width: 15rem;
+        background-color: #080808b2;
+        color: white;
+        border-radius: 18px;
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out box-shadow 0.3s ease-in-out;
+        box-shadow: 0 4px 8px rgb(255, 255, 255);
+    }
+    
+    /*efecto hover en la tarjeta*/
+    .card:hover{
+        transform: scale(1.05);
+        box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.2);
+    }
+    
+    /*Esto es para la imagen dentro de la tarjeta*/
+    .card img{
+        width: 240px;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    /*Boton estilizado*/
+    .card .btn{
+        background-color: yellow;
+        color: black;
+        border: none;
+        transition:  background 0.3s ease-in-out;
+    }
+    
+    .card .btn:hover{
+        background-color: yellow;
+    }
+    /*Reposividad para pantallas chicas*/
+    @media(max-width:600px){
+        .card-container{
+            flex-direction: column;/*cambia a columna*/
+            align-items: center; /*centra en pantallas chicas */
+        }
+    }
+
+
+
+
+    /* From Uiverse.io by JaydipPrajapati1910 */ 
+.button {
+
+    
+        
+        border: none;
+        transition:  background 0.3s ease-in-out;
+
+    --width: 100px;
+    --height: 35px;
+    --tooltip-height: 35px;
+    --tooltip-width: 90px;
+    --gap-between-tooltip-to-button: 18px;
+    --button-color: #222;
+    --tooltip-color: #fff;
+    width: var(--width);
+    height: var(--height);
+    background: var(--button-color);
+    position: relative;
+    text-align: center;
+    border-radius: 0.45em;
+    font-family: "Arial";
+    transition: background 0.3s;
+  }
+  
+  .button::before {
+    position: absolute;
+    content: attr(data-tooltip);
+    width: var(--tooltip-width);
+    height: var(--tooltip-height);
+    background-color: #555;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: .25em;
+    line-height: var(--tooltip-height);
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+    left: calc(50% - var(--tooltip-width) / 2);
+  }
+  
+  .button::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #555;
+    left: calc(50% - 10px);
+    bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+  }
+  
+  .button::after,.button::before {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+  }
+  
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button-wrapper,.text,.icon {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #fff;
+  }
+  
+  .text {
+    top: 0
+  }
+  
+  .text,.icon {
+    transition: top 0.5s;
+  }
+  
+  .icon {
+    color: #fff;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .button:hover {
+    background: #424242;
+  }
+  
+  .button:hover .text {
+    top: -100%;
+  }
+  
+  .button:hover .icon {
+    top: 0;
+  }
+  
+  .button:hover:before,.button:hover:after {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .button:hover:after {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+  }
+  
+  .button:hover:before {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+  }
+
+  
+  
+  
+  
+  
+  

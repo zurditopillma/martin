@@ -1,0 +1,94 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">INICIO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contacto">CONTACTO</a>
+        </li>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Yerbas
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/producto" href="#">Canarias</a></li>
+            <li><a class="dropdown-item" routerLink="/baldo" href="#">Baldo</a></li>
+            <li><a class="dropdown-item" routerLink="/pindare" href="#">Pindare</a></li>
+            <li><a class="dropdown-item" routerLink="/reyverde" href="#">Rey verde</a></li>
+          </ul>
+        </div>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/oferta">OFERTAS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/quienessomos">QUIENES SOMOS</a>
+        </li>
+      </ul>
+      <li>
+        
+        <a routerLink="/favoritos">
+          <i class="bi bi-cart"></i>
+          <i class="fa-solid fa-star" style="color: #000000;"></i>
+          <span *ngIf="cantidadFavoritos > 0"></span>
+          {{cantidadFavoritos}}
+        </a>
+      </li>
+      <li>
+        
+        <a routerLink="/carrito">
+          <i class="bi bi-cart"></i>
+          <i class="fa-solid fa-cart-shopping" style="color: #060505;"></i>
+          <span *ngIf="cantidadProductos > 0 "></span>
+          {{cantidadProductos}}
+        </a>
+      </li>
+
+
+    </div>
+  </div>
+</nav>
+
+
+<!-- <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Todo en Yerbas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/contacto">CONTACTO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/producto">PRODUCTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/oferta">OFERTAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/quienessomos">QUIENES SOMOS</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button class="btn btn-outline-success" type="submit">Carrito</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>-->
