@@ -17,10 +17,10 @@ export class ProductoComponent {
 
     {
       id: 1,
-      Nombre: "Producto 1",
+      Nombre: "canarias",
       descripcion: "Yerba Mate Canarias Sabor Tradicional",
       precio: 13000,
-      imagen: "https://grupomaterojo.com.ar/wp-content/uploads/Productos-Grupo-Mate-Rojo-Canarias-1kg.jpg",
+      imagen: "https://th.bing.com/th/id/OIP.oh2YDoquJazp_u_i9sdSNQHaHa?cb=iwp2&rs=1&pid=ImgDetMain",
       disponibilidad: true,
       cantidad: 50,
     },

@@ -1,16 +1,15 @@
-<h1 style="text-align: center;">OFERTAS</h1>
-<div id="carouselExampleIndicators" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://d22fxaf9t8d39k.cloudfront.net/53e4fc240596c53fbfd1da07f635527705d02ff51466f09a18d303f9ab2fab6919762.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Catalogo de Mates
+    </button>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" routerLink="/matesalgarrobo" href="#">Mates imperiales</a></li>
+        <li><a class="dropdown-item" routerLink="/matescamioneros" href="#">Mates camioneros</a></li>
+        <li><a class="dropdown-item" routerLink="/matestorpedos" href="#">Mates torpedos</a></li>
+    </ul>
+</div>
+
+<h1 style="text-align: center;">MATES ALGARROBO</h1>
 
 <div class="card-container">
     <ng-container *ngIf="Productos && Productos.length">

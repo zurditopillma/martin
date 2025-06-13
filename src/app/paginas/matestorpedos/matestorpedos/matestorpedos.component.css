@@ -50,7 +50,7 @@ body{background-color: #222;
     /*Esto es para la imagen dentro de la tarjeta*/
     .card img{
         width: 240px;
-        height: 280px;
+        height: 200px;
         object-fit: cover;
     }
     

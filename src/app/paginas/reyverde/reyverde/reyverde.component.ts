@@ -43,7 +43,7 @@ Productos: Producto[] = [
       cantidad:50,
     },
     { 
-      id:3,
+      id:4,
       Nombre: "Yerba",
       descripcion: "Yerba Mate Premium Rei Verde",
       precio: 100,

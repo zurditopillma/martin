@@ -10,6 +10,12 @@ import { BaldoComponent } from './paginas/baldo/baldo/baldo.component';
 import { PindareComponent } from './paginas/pindare/pindare/pindare.component';
 import { ReyverdeComponent } from './paginas/reyverde/reyverde/reyverde.component';
 import { FavoritosComponent } from './paginas/favoritos/favoritos/favoritos.component';
+import { MatesComponent } from './paginas/mates/mates/mates.component';
+import { MatesimperialesComponent } from './paginas/matesimperiales/matesimperiales/matesimperiales.component';
+import { MatesalgarroboComponent } from './paginas/matesalgarrobo/matesalgarrobo/matesalgarrobo.component';
+import { MatestorpedosComponent } from './paginas/matestorpedos/matestorpedos/matestorpedos.component';
+import { MatescamionerosComponent } from './paginas/matescamioneros/matescamioneros/matescamioneros.component';
+import { CompraComponent } from './paginas/compra/compra.component';
 
 
 export const routes: Routes = [
@@ -23,5 +29,11 @@ export const routes: Routes = [
     {path:'favoritos',component:FavoritosComponent},
     {path:'baldo',component:BaldoComponent},
     {path:'pindare',component:PindareComponent},
-    {path:'reyverde',component:ReyverdeComponent}
+    {path:'reyverde',component:ReyverdeComponent},
+    {path:'mates',component:MatesComponent},
+    {path:'matesimperiales', component:MatesimperialesComponent},
+    {path:'matesalgarrobo', component:MatesalgarroboComponent},
+    {path:'matestorpedos', component:MatestorpedosComponent},
+    {path:'matescamioneros', component:MatescamionerosComponent},
+    {path:'compra', component:CompraComponent}
 ];
