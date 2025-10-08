@@ -23,6 +23,8 @@ export class MatestorpedosComponent {
             imagen:"https://todomates.com.ar/wp-content/uploads/2021/05/MATES_7996.jpg", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+      marca: "Torpedo",
           },
 
           { 
@@ -33,6 +35,8 @@ export class MatestorpedosComponent {
             imagen:"https://todomates.com.ar/wp-content/uploads/2022/12/06Sep2024-Kobe-TodoMates-61.jpg", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+      marca: "Torpedo",
           },
           { 
             id:3,
@@ -42,6 +46,8 @@ export class MatestorpedosComponent {
             imagen:"https://todomates.com.ar/wp-content/uploads/2022/12/06Sep2024-Kobe-TodoMates-42.jpg", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+      marca: "Torpedo",
           },
           { 
             id:4,
@@ -51,6 +57,8 @@ export class MatestorpedosComponent {
             imagen:"https://todomates.com.ar/wp-content/uploads/2022/12/06Sep2024-Kobe-TodoMates-1-e1741975507259.jpg", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+      marca: "Torpedo",
           },
           { 
             id:5,
@@ -60,6 +68,8 @@ export class MatestorpedosComponent {
             imagen:"https://todomates.com.ar/wp-content/uploads/2022/12/06Sep2024-Kobe-TodoMates-20.jpg", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+      marca: "Torpedo",
           },
           { 
             id:6,
@@ -69,6 +79,8 @@ export class MatestorpedosComponent {
             imagen:"https://todomates.com.ar/wp-content/uploads/2021/05/MATES_7928.jpg", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+      marca: "Torpedo",
           },
           { 
             id:7,
@@ -78,6 +90,8 @@ export class MatestorpedosComponent {
             imagen:"https://todomates.com.ar/wp-content/uploads/2022/12/TODOMATES_11475.jpg", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+      marca: "Torpedo",
           },
           { 
             id:8,
@@ -87,6 +101,8 @@ export class MatestorpedosComponent {
             imagen:"https://acdn-us.mitiendanube.com/stores/001/621/530/products/img_1219-dc1285a1f47d6d320417338689972742-1024-1024.webp", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+      marca: "Torpedo",
           },
           { 
             id:9,
@@ -96,6 +112,8 @@ export class MatestorpedosComponent {
             imagen:"https://acdn-us.mitiendanube.com/stores/001/621/530/products/20230831_1539011-37d5da10ec4da4fcd716935087366217-640-0.webp", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+      marca: "Torpedo",
           },
           { 
             id:10,
@@ -105,6 +123,8 @@ export class MatestorpedosComponent {
             imagen:"https://acdn-us.mitiendanube.com/stores/001/621/530/products/251-c7fa2984d2eafdc31416814248320697-640-0.webp", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+      marca: "Torpedo",
           },
           { 
             id:11,
@@ -114,6 +134,8 @@ export class MatestorpedosComponent {
             imagen:"https://acdn-us.mitiendanube.com/stores/001/621/530/products/imagen-de-whatsapp-2024-01-16-a-las-18-07-52_050fea33-54273e85a9693a200e17054425984273-640-0.webp", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+      marca: "Torpedo",
           },
           { 
             id:12,
@@ -123,6 +145,8 @@ export class MatestorpedosComponent {
             imagen:"https://acdn-us.mitiendanube.com/stores/001/621/530/products/imagen_de_whatsapp_2023-11-30_a_las_18-45-15_0affaf27-removebg-preview-12095a259b11f7baf217013837268123-640-0.webp", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+      marca: "Torpedo",
           },
         ]
         constructor(private carritoService: CarritoService, private favoritosService: FavoritosService){}

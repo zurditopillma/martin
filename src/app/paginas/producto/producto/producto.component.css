@@ -56,14 +56,14 @@ body{background-color: #222;
   
   /*Boton estilizado*/
   .card .btn{
-      background-color: yellow;
+      background-color: rgb(112, 138, 88);
       color: black;
       border: none;
       transition:  background 0.3s ease-in-out;
   }
   
   .card .btn:hover{
-      background-color: yellow;
+      background-color: rgb(112, 138, 88);
   }
   /*Reposividad para pantallas chicas*/
   @media(max-width:600px){

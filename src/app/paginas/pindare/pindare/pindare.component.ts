@@ -20,10 +20,12 @@ export class PindareComponent {
         id:1,
         Nombre: "yerba",
         descripcion: "Yerba Mate Pindaré Tradicional 1kg",
-        precio: 100,
+        precio: 7000,
         imagen:"https://static.wixstatic.com/media/cb31e7_b5bbded3dcb04ff7860a583874ff20f2~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg", 
         disponibilidad: true,
         cantidad:50,
+        categoria: "Yerba",
+      marca: "Pindare",
       },
       
     ]

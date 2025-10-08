@@ -1,0 +1,31 @@
+.custom-navbar {
+  background-color: rgb(112, 138, 88); /* Color de fondo */
+}
+
+.custom-navbar .nav-link {
+  color: #00695c; /* Color de los links */
+}
+
+.custom-navbar .nav-link:hover {
+  color: #004d40; /* Color al pasar el mouse */
+}
+
+.custom-navbar .dropdown-menu {
+  background-color: rgb(112, 138, 88);
+}
+
+.custom-navbar .dropdown-item {
+  color: #004d40;
+}
+
+.custom-navbar .dropdown-item:hover {
+  background-color: #004d40;
+}
+element::before,
+element::after {
+  content: none !important;
+}
+li {
+  list-style: none;
+  padding-left: 0;
+}

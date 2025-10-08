@@ -23,6 +23,8 @@ export class MatesalgarroboComponent {
             imagen:"https://d22fxaf9t8d39k.cloudfront.net/7505b9adc570418b349ffc0bddd72eba5ad794ec8db4f0c7eb925a1b69907ffb19762.jpg", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+      marca: "Algarrobo",
           },
 
           { 
@@ -33,6 +35,8 @@ export class MatesalgarroboComponent {
             imagen:"https://d22fxaf9t8d39k.cloudfront.net/536130a5fcb475c02bbe1e920f6b2d12b376978a5ae80993bbf47a13ada6cf8019762.jpg", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+      marca: "Algarrobo",
           },
 
           { 
@@ -43,6 +47,8 @@ export class MatesalgarroboComponent {
             imagen:"https://d22fxaf9t8d39k.cloudfront.net/0e53dd4e63daee5c0b81e6524527b4f14da40867409bcefdad7d1edcf8efbb5419762.jpg", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+            marca: "Algarrobo",
           },
           
         ]

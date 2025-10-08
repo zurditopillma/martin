@@ -1,22 +1,98 @@
+<div class="filtro">
+  <div class="row mb-3">
+    <div class="col md-3">
+      <label>Categoria:</label>
+      <select class="form-select" [(ngModel)]="selectedCategory" name="categoria">
+        <option value="">Todas</option>
+        <option *ngFor="let categoria of categories" [value]="categoria">{{categoria}}</option>
+      </select>
+    </div>
+
+
+    <div class="col-md-3">
+      <label>Marca:</label>
+      <select class="form-select" [(ngModel)]="selectedBrand" name="marca">
+        <option value="">Todas</option>
+        <option *ngFor="let marca of marcas" [value]="marca">{{marca}}</option>
+      </select>
+    </div>
+
+    <div class="col-md-2">
+      <label>Precio min:</label>
+      <input type="number" class="form-control" [(ngModel)]="minprecio" name="minprecio">
+    </div>
+
+    <div class="col-md-2">
+      <label>Precio max:</label>
+      <input type="number" class="form-control" [(ngModel)]="maxprecio" name="maxprecio">
+    </div>
+
+    <div class="col-md-2 d-flex align-item-end">
+      <button class="btn btn-secondary w-100" (click)="resetfilters()">
+        <div class="button-top">Limpiar</div>
+      </button>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <ng-container *ngIf="filteredProducts && filteredProducts.length">
+      <ng-container *ngFor="let producto of filteredProducts">
+        <div *ngIf="producto.disponibilidad" class="card">
+          <img [src]="producto.imagen" alt="{{producto.Nombre}}" class="product-image">
+          <h2>{{producto.Nombre}}</h2>
+          <p>{{producto.descripcion}}</p>
+          <p>Precio: {{producto.precio}}</p>
+          <p>Cantidad: {{producto.cantidad}}</p>
+          <p>Categoria: {{producto.categoria}}</p>
+          <p>Marca: {{producto.marca}}</p>
+
+          <button type="button" class="btn btn-outline-primary" (click)="agregar(producto)">Agregar a carrito</button>
+          <button type="button" class="btn btn-outline-primary" (click)="agregarFavoritos(producto)">Agregar a favoritos</button>
+          </div>
+      </ng-container>
+    </ng-container>
+  </div>
+  <div *ngIf="filteredProducts.length == 0" class="text-muted">
+    No se encontraron productos que coinsidadn con los filtros
+  </div>
+</div>
+
+
+
+
+
+
 <div id="carouselExampleIndicators" class="carousel slide">
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+      aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+      aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+      aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+      aria-label="Slide 4"></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://dcdn-us.mitiendanube.com/stores/001/716/742/themes/style/1-slide-1728392261953-4005664138-0c3d0cbdda9d3ed5080b1b8f4a4308961728392262-1920-1920.png?803119303" class="d-block w-100" alt="...">
+      <img
+        src="https://dcdn-us.mitiendanube.com/stores/001/716/742/themes/style/1-slide-1728392261953-4005664138-0c3d0cbdda9d3ed5080b1b8f4a4308961728392262-1920-1920.png?803119303"
+        class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="https://dcdn-us.mitiendanube.com/stores/001/716/742/themes/style/1-slide-1724080025864-2658868602-a8a88117e24375c622037c91d54a98401724080032-1920-1920.png?803119303" class="d-block w-100" alt="...">
+      <img
+        src="https://dcdn-us.mitiendanube.com/stores/001/716/742/themes/style/1-slide-1724080025864-2658868602-a8a88117e24375c622037c91d54a98401724080032-1920-1920.png?803119303"
+        class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="https://dcdn-us.mitiendanube.com/stores/001/716/742/themes/style/1-slide-1724080025865-842460047-afc0a1deeb8b43059684e2ab7eefe2111724080033-1920-1920.png?803119303" class="d-block w-100" alt="...">
+      <img
+        src="https://dcdn-us.mitiendanube.com/stores/001/716/742/themes/style/1-slide-1724080025865-842460047-afc0a1deeb8b43059684e2ab7eefe2111724080033-1920-1920.png?803119303"
+        class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="https://dcdn-us.mitiendanube.com/stores/001/716/742/themes/style/1-slide-1724080025865-7587936628-f7fed372a9f053f39a6ae3246b12b8b81724080035-1920-1920.png?803119303" class="d-block w-100" alt="...">
+      <img
+        src="https://dcdn-us.mitiendanube.com/stores/001/716/742/themes/style/1-slide-1724080025865-7587936628-f7fed372a9f053f39a6ae3246b12b8b81724080035-1920-1920.png?803119303"
+        class="d-block w-100" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

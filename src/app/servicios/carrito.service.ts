@@ -48,10 +48,10 @@ export class CarritoService {
     return this.carritoSubjet.getValue();
   }
 
-  //metodo para calcular el total a pagar (precio*cantidad de cada producto)
+
   obtenerTotal(): number{
     const productos = this.carritoSubjet.getValue();
-    //usamos reduce para sumar los subtotales de cada producto
+   
     return productos.reduce((total,item)=> total + item.producto.precio*item.cantidad, 0)
   }
 

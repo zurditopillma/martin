@@ -23,6 +23,8 @@ Productos: Producto[] = [
       imagen:"https://th.bing.com/th/id/OIP.DtzR8B-LT6lPuAFJ8FYn1AHaJ4?cb=iwp1&rs=1&pid=ImgDetMain", 
       disponibilidad: true,
       cantidad:50,
+      categoria: "Yerba",
+      marca: "Rey Verde",
     },
     { 
       id:2,
@@ -32,6 +34,8 @@ Productos: Producto[] = [
       imagen:"https://flaming.ar/wp-content/uploads/2021/09/1237-jpg.webp",
       disponibilidad: true,
       cantidad:50,
+      categoria: "Yerba",
+      marca: "Rey Verde",
     },
     { 
       id:3,
@@ -41,6 +45,8 @@ Productos: Producto[] = [
       imagen:"https://apolomates.com.ar/wp-content/uploads/2021/11/51-95e41cbc16267ab74e16295578709488-480-0-1-1.jpg",
       disponibilidad: true,
       cantidad:50,
+      categoria: "Yerba",
+      marca: "Rey Verde",
     },
     { 
       id:4,
@@ -50,6 +56,8 @@ Productos: Producto[] = [
       imagen:"https://th.bing.com/th/id/OIP.npBE86b0-RWhevGHSAvnzAHaHa?cb=iwp1&w=600&h=600&rs=1&pid=ImgDetMain",
       disponibilidad: true,
       cantidad:50,
+      categoria: "Yerba",
+      marca: "Rey Verde",
     },
     
 

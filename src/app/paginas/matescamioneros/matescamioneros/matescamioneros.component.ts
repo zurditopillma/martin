@@ -23,6 +23,8 @@ export class MatescamionerosComponent {
             imagen:"https://todomates.com.ar/wp-content/uploads/2021/05/MATES_8283.jpg", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+            marca: "Camionero",
           },
           
           { 
@@ -33,6 +35,8 @@ export class MatescamionerosComponent {
             imagen:"https://todomates.com.ar/wp-content/uploads/2021/05/MATES_8360.jpg", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+            marca: "Camionero",
           },
           { 
             id:3,
@@ -42,6 +46,8 @@ export class MatescamionerosComponent {
             imagen:"https://todomates.com.ar/wp-content/uploads/2021/05/MATES_8363.jpg", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+            marca: "Camionero",
           },
 
           { 
@@ -52,6 +58,8 @@ export class MatescamionerosComponent {
             imagen:"https://todomates.com.ar/wp-content/uploads/2021/05/MATES_8406.jpg", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+            marca: "Camionero",
           },
 
           { 
@@ -62,6 +70,8 @@ export class MatescamionerosComponent {
             imagen:"https://todomates.com.ar/wp-content/uploads/2022/08/TodoMates-137-300x300.jpg", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+            marca: "Camionero",
           },
 
           { 
@@ -72,6 +82,8 @@ export class MatescamionerosComponent {
             imagen:"https://todomates.com.ar/wp-content/uploads/2022/12/06Sep2024-Kobe-TodoMates-29.jpg", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+            marca: "Camionero",
           },
 
           { 
@@ -82,6 +94,8 @@ export class MatescamionerosComponent {
             imagen:"https://todomates.com.ar/wp-content/uploads/2022/12/TODOMATES_11443.jpg", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+            marca: "Camionero",
           },
 
           { 
@@ -92,6 +106,8 @@ export class MatescamionerosComponent {
             imagen:"https://todomates.com.ar/wp-content/uploads/2022/12/TODOMATES_11398.jpg", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+            marca: "Camionero",
           },
 
           { 
@@ -102,6 +118,8 @@ export class MatescamionerosComponent {
             imagen:"https://todomates.com.ar/wp-content/uploads/2022/12/TODOMATES_11402.jpg", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+            marca: "Camionero",
           },
           { 
             id:9,
@@ -111,6 +129,8 @@ export class MatescamionerosComponent {
             imagen:"https://todomates.com.ar/wp-content/uploads/2022/12/TODOMATES_10770_web.jpg", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+            marca: "Camionero",
           },
           { 
             id:10,
@@ -120,6 +140,8 @@ export class MatescamionerosComponent {
             imagen:"https://todomates.com.ar/wp-content/uploads/2022/12/TODOMATES_10776_web.jpg", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+            marca: "Camionero",
           },
           { 
             id:11,
@@ -129,6 +151,8 @@ export class MatescamionerosComponent {
             imagen:"https://todomates.com.ar/wp-content/uploads/2021/05/MATES_8345.jpg", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+            marca: "Camionero",
           },
           { 
             id:12,
@@ -138,6 +162,8 @@ export class MatescamionerosComponent {
             imagen:"https://todomates.com.ar/wp-content/uploads/2021/05/MATES_8093.jpg", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+            marca: "Camionero",
           },
           { 
             id:13,
@@ -147,6 +173,8 @@ export class MatescamionerosComponent {
             imagen:"https://todomates.com.ar/wp-content/uploads/2022/12/TodoMates-97.jpg", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+            marca: "Camionero",
           },
           { 
             id:14,
@@ -156,6 +184,8 @@ export class MatescamionerosComponent {
             imagen:"https://todomates.com.ar/wp-content/uploads/2021/05/MATES_8355-600x600.jpg", 
             disponibilidad: true,
             cantidad:50,
+            categoria: "Mate",
+            marca: "Camionero",
           },
         ]
         constructor(private carritoService: CarritoService, private favoritosService: FavoritosService){}

@@ -63,13 +63,12 @@ export class CompraComponent implements OnInit {
     return this.total
   }
 
-  //prepara los datos para la factura con cliente, productos, totales y fechas
+ 
   emitirFactura():void{
-    const datosCliente = this.formularioCompra.value; //datos ingresados del formulario
+    const datosCliente = this.formularioCompra.value; 
     const productos = this.carritoService.obtenerProductos(); //productos de carrito
-    const totalFinal = this.calcularTotal(); //totalñ calñculado con envio
-
-    //construye el objeto factura con todsa la info del usuario
+    const totalFinal = this.calcularTotal(); 
+    
     this.factura = {
       cliente:datosCliente,
       productos: productos,
@@ -78,7 +77,7 @@ export class CompraComponent implements OnInit {
       fecha: new Date()
     };
 
-    //marca que la factura fue generada
+    
     this.facturaGenerada = true;
   }
 

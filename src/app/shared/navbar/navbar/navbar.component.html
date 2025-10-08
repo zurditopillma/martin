@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg custom-navbar">
   <a class="navbar-brand" href="#">
-    <img src="https://th.bing.com/th/id/OIP.qucOizsfn-fpoZ-e8UWuWgHaHa?rs=1&pid=ImgDetMain" alt="Logo" width="130"
+    <img src="https://tse3.mm.bing.net/th/id/OIP.NmxFZbqaU5JXgw-YHjzPRwHaHa?rs=1&pid=ImgDetMain" alt="Logo" width="100"
       height="75" class="d-inline-block align-text-top">
 
   </a>
@@ -37,11 +37,16 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="/quienessomos">QUIENES SOMOS</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/iniciosesion">inicio sesion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/registro">registro</a>
+        </li>
       </ul>
       <li>
         
         <a routerLink="/favoritos">
-          <i class="bi bi-cart"></i>
           <i class="fa-solid fa-star" style="color: #333131;"></i>
           <span *ngIf="cantidadFavoritos > 0"></span>
           {{cantidadFavoritos}}
@@ -50,7 +55,6 @@
       <li>
         
         <a routerLink="/carrito">
-          <i class="bi bi-cart"></i>
           <i class="fa-solid fa-cart-shopping" style="color: #222121;"></i>
           <span *ngIf="cantidadProductos > 0 "></span>
           {{cantidadProductos}}

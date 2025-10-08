@@ -19,28 +19,34 @@ export class ProductoComponent {
       id: 1,
       Nombre: "canarias",
       descripcion: "Yerba Mate Canarias Sabor Tradicional",
-      precio: 13000,
+      precio: 12500,
       imagen: "https://th.bing.com/th/id/OIP.oh2YDoquJazp_u_i9sdSNQHaHa?cb=iwp2&rs=1&pid=ImgDetMain",
       disponibilidad: true,
       cantidad: 50,
+      categoria: "Yerba",
+      marca: "Canaria",
     },
     {
       id: 2,
       Nombre: "Producto 2",
       descripcion: "Canarias Serena Yerba Mate",
-      precio: 12000,
+      precio: 13500,
       imagen: "https://th.bing.com/th/id/OIP.5DQHuyRSx295EWvU06IqAQHaHa?rs=1&pid=ImgDetMain",
       disponibilidad: true,
       cantidad: 50,
+      categoria: "Yerba",
+      marca: "Canaria",
     },
     {
       id: 3,
       Nombre: "Producto 3",
       descripcion: "Yerba Mate Canarias Te Verde Y Jengibre",
-      precio: 7500,
+      precio: 5500,
       imagen: "https://www.deliargentina.com/image/cache/catalog/product/mates/yerba-canarias-te-verde-jengibre-1-kilo-uruguay-brasil-para-tomar-mate-uruguayo/yerba-mate-canarias-te-verde-y-jengibre-1-kg-uruguay-brasil-1280x1280.jpg",
       disponibilidad: true,
       cantidad: 50,
+      categoria: "Yerba",
+      marca: "Canaria",
     },
     {
       id: 4,
@@ -50,6 +56,8 @@ export class ProductoComponent {
       imagen: "https://th.bing.com/th/id/OIP.3lw2P3gYpZQ8mj8ybUR7lwHaHa?w=1000&h=1000&rs=1&pid=ImgDetMain",
       disponibilidad: true,
       cantidad: 50,
+      categoria: "Yerba",
+      marca: "Canaria",
     },
 
     {
@@ -60,6 +68,8 @@ export class ProductoComponent {
       imagen: "https://cdn11.bigcommerce.com/s-3stx4pub31/images/stencil/590x590/products/255/718/rojo__55788.1646955094.jpg?c=2",
       disponibilidad: true,
       cantidad: 50,
+      categoria: "Yerba",
+      marca: "Canaria",
     },
   ]
 
@@ -68,11 +78,11 @@ export class ProductoComponent {
   //METODO PARA AGREGAR UN PRODUCTO AL CARRITO
   agregar(producto: Producto) {
     this.carritoService.agregarAlCarrito(producto)
-    alert('Producto agregado al carrito')//muestra el 
+    alert('Producto agregado al carrito')//muestra una alerta que se agrego al carrito
   }
   agregarFavoritos(producto: Producto){
     this.favoritosService.agregarAFavoritos(producto)
-    alert('Producto agregado a favoritos')//muestra el 
+    alert('Producto agregado a favoritos')//muestra una alerta que se agrega al carrito
   }
 
   usuario = {

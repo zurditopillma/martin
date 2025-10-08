@@ -20,10 +20,12 @@ export class BaldoComponent {
       id:1,
       Nombre: "yerba",
       descripcion: "yerba mate BALDO X 1 kilo",
-      precio: 100,
+      precio: 12000,
       imagen:"https://canarias.com.uy/wp-content/uploads/2018/09/baldo.jpg", 
       disponibilidad: true,
       cantidad:50,
+      categoria: "Despalada",
+      marca: "BALDO",
     },
     
 
