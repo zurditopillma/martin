@@ -2,7 +2,7 @@ import { CommonModule, NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import jspdf, { jsPDF } from 'jspdf'
+import jsPDF from 'jspdf'
 import { CarritoService } from '../../servicios/carrito.service';
 
 @Component({

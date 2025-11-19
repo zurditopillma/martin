@@ -16,9 +16,9 @@ import { MatesalgarroboComponent } from './paginas/matesalgarrobo/matesalgarrobo
 import { MatestorpedosComponent } from './paginas/matestorpedos/matestorpedos/matestorpedos.component';
 import { MatescamionerosComponent } from './paginas/matescamioneros/matescamioneros/matescamioneros.component';
 import { CompraComponent } from './paginas/compra/compra.component';
-import { IniciosesionComponent } from './paginas/iniciosesion/iniciosesion/iniciosesion.component';
-import { register } from 'node:module';
-import { RegistroComponent } from './paginas/registro/registro/registro.component';
+import { InicioSesionComponent } from './paginas/auth/login/inicio-sesion/inicio-sesion.component';
+import { RegistroComponent } from './paginas/auth/login/registro/registro.component';
+
 
 
 export const routes: Routes = [
@@ -39,6 +39,6 @@ export const routes: Routes = [
     {path:'matestorpedos', component:MatestorpedosComponent},
     {path:'matescamioneros', component:MatescamionerosComponent},
     {path:'compra', component:CompraComponent},
-    {path: 'iniciosesion', component:IniciosesionComponent},
+    {path: 'login', component:InicioSesionComponent},
     {path: 'registro', component:RegistroComponent}
 ];
