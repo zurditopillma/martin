@@ -1,0 +1,74 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.centered-text {
+    font-size: 50px; /* Cambia el tamaño de la palabra */
+    color: #333; /* Color opcional */
+}
+
+/*estilos generales*/
+body{background-color: #222;
+    color: white;
+    font-family: Arial, sans-serif;
+    }
+     /*contenedor de las tarjetas*/
+    .card-container{
+        display: flex;
+        justify-content: center; /*centra las tarjetas*/
+        gap: 20px; /*espacio entre las tarjetas*/
+        flex-wrap: wrap; /*permite que se acomoden en pantallas chicas*/
+        padding: 20px;
+    }
+    
+    /*estilos para la tarjeta*/
+    .card{
+        width: 15rem;
+        background-color: #080808b2;
+        color: white;
+        border-radius: 18px;
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out box-shadow 0.3s ease-in-out;
+        box-shadow: 0 4px 8px rgb(255, 255, 255);
+    }
+    
+    /*efecto hover en la tarjeta*/
+    .card:hover{
+        transform: scale(1.05);
+        box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.2);
+    }
+    
+    /*Esto es para la imagen dentro de la tarjeta*/
+    .card img{
+        width: 240px;
+        height: 280px;
+        object-fit: cover;
+    }
+    
+    /*Boton estilizado*/
+    .card .btn{
+        background-color: rgb(112, 138, 88);
+        color: black;
+        border: none;
+        transition:  background 0.3s ease-in-out;
+    }
+    
+    .card .btn:hover{
+        background-color: rgb(112, 138, 88);
+    }
+    /*Reposividad para pantallas chicas*/
+    @media(max-width:600px){
+        .card-container{
+            flex-direction: column;/*cambia a columna*/
+            align-items: center; /*centra en pantallas chicas */
+        }
+    }
